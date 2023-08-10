@@ -4,7 +4,7 @@
 echo Download oneAPI Basekit
 curl.exe --output %TEMP%\webimage.exe --url %1 --retry 5 --retry-delay 5  --log %TEMP%\extract.log
 echo Extract oneAPI Basekit Installer
-start /b /wait %TEMP%\webimage.exe -s -x -f -v %TEMP%\webimage_extracted 
+start /b /wait %TEMP%\webimage.exe -s -x -f %TEMP%\webimage_extracted 
 del %TEMP%\webimage.exe
 
 :: run installer
@@ -15,7 +15,7 @@ echo Run oneAPI Basekit Installer
 echo Download oneAPI HPC
 curl.exe --output %TEMP%\webimage.exe --url %2 --retry 5 --retry-delay 5  --log %TEMP%\extract.log
 echo Extract oneAPI Basekit Installer
-start /b /wait %TEMP%\webimage.exe -s -x -f -v %TEMP%\webimage_extracted 
+start /b /wait %TEMP%\webimage.exe -s -x -f %TEMP%\webimage_extracted 
 del %TEMP%\webimage.exe
 
 :: run installer 
