@@ -1,4 +1,4 @@
-@echo off
+@echo on
 
 :: download and unpack installer - BASEKIT
 curl.exe --output %TEMP%\webimage.exe --url %1 --retry 5 --retry-delay 5  --log %TEMP%\extract.log
