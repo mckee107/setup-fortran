@@ -1,8 +1,9 @@
-# Setup Fortran
+# Setup Intel oneAPI
 
-[![Test](https://github.com/awvwgk/setup-fortran/actions/workflows/test.yml/badge.svg)](https://github.com/awvwgk/setup-fortran/actions/workflows/test.yml)
+This repo is adapted from awvwgk/setup-fortran to include the Intel oneAPI icx and ifx compilers and the mkl and mpi libraries for windows builds. Anyother use is not included or maintained. 
 
-Action to setup a Fortran compiler.
+IMPORTANT: This is a minimally working CI action in order to test Windows builds for OpenSees CMake builds.
+
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -19,8 +20,9 @@ Action to setup a Fortran compiler.
 
 ## Usage
 
-This action sets up a Fortran compiler on Ubuntu, MacOS and Windows runners.
+This action sets up an Intel oneAPI compiler on Ubuntu, MacOS and Windows runners.
 
+**ONLY TESTED FOR WINDOWS BUILDS
 ```yaml
 jobs:
   test:
