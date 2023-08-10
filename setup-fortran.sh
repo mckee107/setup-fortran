@@ -433,7 +433,7 @@ install_intel_win()
       ;;
   esac
 
-  "$GITHUB_ACTION_PATH/install-intel-windows.bat" $WINDOWS_HPCKIT_URL
+  "$GITHUB_ACTION_PATH/install-intel-windows.bat" $WINDOWS_BASEKIT_URL $WINDOWS_HPCKIT_URL
 
   # don't call export_intel_vars here because the install may have
   # been restored from cache. export variables in action.yml after
