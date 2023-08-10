@@ -1,5 +1,5 @@
-name: "Setup Fortran"
-description: "Setup Fortran compiler and toolchain"
+name: "Setup Intel oneAPI"
+description: "Setup Intel oneAPI C++ & Fortran compiler and toolchain"
 inputs:
   compiler:
     description: "Compiler toolchain"
@@ -59,7 +59,7 @@ runs:
         VERSION: ${{ inputs.version }}
       run: |
         action_path=$(echo '/${{ github.action_path }}' | sed -e 's/\\/\//g' -e 's/://')
-        source "$action_path/setup-fortran.sh"
+        source "$action_path/setup-oneAPI.sh"
         
         compiler=${COMPILER:-gcc}
         platform=$(uname -s | tr '[:upper:]' '[:lower:]')
