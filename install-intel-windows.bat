@@ -9,7 +9,7 @@ del %TEMP%\webimage.exe
 
 :: run installer
 echo Run oneAPI Basekit Installer
-%TEMP%\webimage_extracted\bootstrapper.exe -s --action install --components=intel.oneapi.win.dpcpp-compiler:intel.oneapi.win.mkl.devel --eula=accept -p=NEED_VS2017_INTEGRATION=0 -p=NEED_VS2019_INTEGRATION=0 -p=NEED_VS2022_INTEGRATION=1   --log-dir=%TEMP%
+%TEMP%\webimage_extracted\bootstrapper.exe -s --action install --components=intel.oneapi.win.dpcpp-compiler:intel.oneapi.win.mkl.devel --eula=accept -p=NEED_VS2017_INTEGRATION=0 -p=NEED_VS2019_INTEGRATION=0 -p=NEED_VS2022_INTEGRATION=0   --log-dir=%TEMP%
 
 :: download and unpack installer - HPC KIT
 echo Download oneAPI HPC
@@ -20,4 +20,4 @@ del %TEMP%\webimage.exe
 
 :: run installer 
 echo Run oneAPI HPC Installer
-%TEMP%\webimage_extracted\bootstrapper.exe -s --action install --intel.oneapi.win.ifort-compiler:intel.oneapi.win.mpi.devel:intel.oneapi.win.cpp-compiler --eula=accept -p=NEED_VS2017_INTEGRATION=0 -p=NEED_VS2019_INTEGRATION=0 -p=NEED_VS2022_INTEGRATION=1  --log-dir=%TEMP%
+%TEMP%\webimage_extracted\bootstrapper.exe -s --action install --intel.oneapi.win.ifort-compiler:intel.oneapi.win.mpi.devel:intel.oneapi.win.cpp-compiler --eula=accept -p=NEED_VS2017_INTEGRATION=0 -p=NEED_VS2019_INTEGRATION=0 -p=NEED_VS2022_INTEGRATION=0  --log-dir=%TEMP%
